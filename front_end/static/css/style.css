@@ -1,0 +1,19 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+#map {
+  flex: 60;
+  height: 60vh; /* Set the height of the map */
+  overflow: hidden; /* Optional: Hide overflow content if any */
+}
+
+#barplot {
+  flex: 40;
+  height: 40vh; /* Set the height of the barplot */
+  overflow: hidden; /* Optional: Hide overflow content if any */
+}
