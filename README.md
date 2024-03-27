@@ -29,5 +29,7 @@ colab file: https://colab.research.google.com/drive/13i93pYDH3YeRpXDGWpL8PefKNM5
 
 kaggle file: https://www.kaggle.com/datasets/ahmedshahriarsakib/usa-real-estate-dataset
 
+google slideshow: https://docs.google.com/presentation/d/1w4qhKiHaLhZQ-BpB0fA53U4c1HZkGACEukjL8PA3Bio/edit#slide=id.p
+
 ## Contributors
 Tanner, Hanen, Brandon, Gwen, Long
