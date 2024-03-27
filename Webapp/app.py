@@ -38,7 +38,7 @@ def action():
         State = request.form.get('State')
         zipcode = request.form.get('zipcode')
         House_size = request.form.get('House_Size')
-
+        print(Beds, Bath, Acre_lot, City, State, zipcode, House_size)
     #Store the data in a dictionart
     data = {
     "bed": [Beds],
@@ -81,11 +81,14 @@ def action():
     ohetransform = ohe.fit_transform(new_df[['state']])
     new_df = pd.concat([new_df, ohetransform], axis=1).drop(['state'], axis=1)
     new_df = loaded_scaler.transform(new_df)
-    prediction = model.predict([new_df[0]])[0]
+    prediction = model.predict([new_df[-1]])[0]
+    import random
+    random_number = random.randint(1, 100)
+    print(random_number)
     prediction = "${:,.2f}".format(prediction)
 
     return render_template('index1.html', result = f'The estimate price is "{prediction}".')
     # return render_template_string(html_content)
 
 if __name__ == '__main__':
-    app.run(port=5018, debug=True)
+    app.run(port=5020, debug=True)

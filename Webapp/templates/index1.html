@@ -65,23 +65,6 @@
           <li><a class="nav-link scrollto" href="#services">Prediction</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Maps</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -118,18 +101,15 @@
             <img src="static/assets/img/about.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-            <h3>Some description</h3>
+            <h3>Our Purpose</h3>
             <p class="fst-italic">
-              Some description
+              To graduate of course... nah I'm just kidding.
             </p>
             <ul>
-              <li><i class="ri-check-double-line"></i> Some description</li>
-              <li><i class="ri-check-double-line"></i> Some description</li>
-              <li><i class="ri-check-double-line"></i> Some description</li>
+              <li><i class="ri-check-double-line"></i> Help users predict upcoming house price</li>
+              <li><i class="ri-check-double-line"></i> Provide good visualizations</li>
+              <li><i class="ri-check-double-line"></i> Provide good insights on the current real estate market</li>
             </ul>
-            <p>
-              Some description
-            </p>
           </div>
         </div>
 
@@ -166,23 +146,18 @@
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
             <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
               <i class="bx bx-receipt"></i>
-              <h4>Some description</h4>
-              <p>Some description</p>
-            </div>
-            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-              <i class="bx bx-cube-alt"></i>
-              <h4>Some description</h4>
-              <p>Some description</p>
+              <h4>Predictor</h4>
+              <p>An built-in tool to help you predict the house price with specific dimensions</p>
             </div>
             <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
               <i class="bx bx-images"></i>
-              <h4>Some description</h4>
-              <p>Some description</p>
+              <h4>Visualization</h4>
+              <p>Different maps and data to help you visualize how the current market looks like</p>
             </div>
             <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
               <i class="bx bx-shield"></i>
-              <h4>Some description</h4>
-              <p>Some description</p>
+              <h4>Customer Service</h4>
+              <p>Customer assistants to answer your questions</p>
             </div>
           </div>
         </div>
@@ -202,13 +177,13 @@
         <form action="{{ url_for('action')}}"method="post">
 
           <div class="bed"><h5><b>Number of Bedrooms</b></h5>
-            <input type="Number" id = "beds" name ="beds" required="required" placeholder="Maximum of 10"></div><br>
+            <input type="Number" id = "beds" name ="Beds" required="required" placeholder="Maximum of 10"></div><br>
 
           <div class="bath"><h5><b>Number of Bathrooms</b></h5>
-            <input type="Number" id="Bath" name ="baths" required="required" placeholder="Maximum of 10"></div><br>
+            <input type="Number" id="Bath" name ="Bath" required="required" placeholder="Maximum of 10"></div><br>
 
           <div class="housesize"><h5><b>House Size (sqft)</b></h5>
-            <input type="number" name ="House_Size" required="required"></div><br>
+            <input type="number" id="House_Size" name ="House_Size" required="required"></div><br>
 
           <div class="lotsize"><h5><b>Lot Size (acre)</b></h5>
             <input type="float" id="Acre_lot" name ="acre_lot" required="required"></div><br>
@@ -229,9 +204,9 @@
  
           <button type="submit" value="submit" class="btn btn-success btn-block btn-large" style="background:#ffc451; border:#ffc451">Predict</button>
         </form>
-        <h5><strong>{{ result }}</strong></h5>
+        <h5><strong>"{{ result }}"</strong></h5>
       </div>
-      
+
     </section><!-- End Services Section -->
 
     <section id="clients" class="clients">
@@ -307,16 +282,16 @@
           <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right" data-aos-delay="100"></div>
           <div class="col-xl-7 ps-4 ps-lg-5 pe-4 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
             <div class="content d-flex flex-column justify-content-center">
-              <h3>Voluptatem dignissimos provident quasi</h3>
+              <h3>Our Value</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                We are here to make you happy!
               </p>
               <div class="row">
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
                     <i class="bi bi-emoji-smile"></i>
                     <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="2" class="purecounter"></span>
-                    <p><strong>Happy Clients</strong> consequuntur voluptas nostrum aliquid ipsam architecto ut.</p>
+                    <p><strong>Happy Clients & Partners</strong></p>
                   </div>
                 </div>
 
@@ -324,7 +299,7 @@
                   <div class="count-box">
                     <i class="bi bi-journal-richtext"></i>
                     <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="2" class="purecounter"></span>
-                    <p><strong>Projects</strong> adipisci atque cum quia aspernatur totam laudantium et quia dere tan</p>
+                    <p><strong>Projects</strong></p>
                   </div>
                 </div>
 
@@ -332,7 +307,7 @@
                   <div class="count-box">
                     <i class="bi bi-clock"></i>
                     <span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="4" class="purecounter"></span>
-                    <p><strong>Years of experience</strong> aut commodi quaerat modi aliquam nam ducimus aut voluptate non vel</p>
+                    <p><strong>Years of experience</strong></p>
                   </div>
                 </div>
 
@@ -340,7 +315,7 @@
                   <div class="count-box">
                     <i class="bi bi-award"></i>
                     <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="4" class="purecounter"></span>
-                    <p><strong>Awards</strong> rerum asperiores dolor alias quo reprehenderit eum et nemo pad der</p>
+                    <p><strong>Awards</strong></p>
                   </div>
                 </div>
               </div>
@@ -361,11 +336,11 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="static/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <h3>Mark Flynn</h3>
+                <h4>Our God</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  Data is power, wield it.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -374,50 +349,11 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="static/assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
+                <h3>Jared Perez</h3>
+                <h4>Our Savior</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="static/assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="static/assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="static/assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  I walked into a noSQL bar, I left because I couldn't find a table.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -452,8 +388,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
+                <h4>Long Le</h4>
+                <span>Data Analyst</span>
               </div>
             </div>
           </div>
@@ -470,8 +406,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Tanner Blattner</h4>
+                <span>Data Analyst</span>
               </div>
             </div>
           </div>
@@ -488,14 +424,14 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
+                <h4>Gwendolyn Lukman</h4>
+                <span>Data Analyst</span>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="400">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
               <div class="member-img">
                 <img src="static/assets/img/team/team-4.jpg" class="img-fluid" alt="">
                 <div class="social">
@@ -506,8 +442,26 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
+                <h4>Hanen Zeddini</h4>
+                <span>Data Analyst</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="static/assets/img/team/team-5.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Brandon Nicholson</h4>
+                <span>Data Analyst</span>
               </div>
             </div>
           </div>
@@ -526,10 +480,6 @@
           <p>Contact Us</p>
         </div>
 
-        <div>
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
-        </div>
-
         <div class="row mt-5">
 
           <div class="col-lg-4">
@@ -537,7 +487,7 @@
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>University of California, Irvine, Irvine CA, 92697</p>
               </div>
 
               <div class="email">
@@ -549,7 +499,7 @@
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p>+1 (949) 824-5011</p>
               </div>
 
             </div>
@@ -598,11 +548,11 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-              <h3>Gp<span>.</span></h3>
+              <h3>G4<span>.</span></h3>
               <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
+                University of California, Irvine <br>
+                Irvine, CA 92697, USA<br><br>
+                <strong>Phone:</strong> +1 (949) 824-5011<br>
                 <strong>Email:</strong> info@example.com<br>
               </p>
               <div class="social-links mt-3">
@@ -629,17 +579,15 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Built-in predicting app</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Visualization</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Direct Assitant</a></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <p>Check us out to update the current real estate market!</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
@@ -652,7 +600,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Gp</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>G4</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
