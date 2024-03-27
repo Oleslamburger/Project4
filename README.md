@@ -17,7 +17,7 @@ For the machine learning portion of our project, further cleaning of the data wa
 
 ### Visualizations
 
-Visualizations were created using both tableau and leaflet. Why you may ask? Because why the hell not! The visualizations created tell stories of total real estate and average real estate values by state that are filterable based on the number of bedrooms, bathrooms, and square footage.
+Visualizations were created using both tableau and leaflet. The visualizations created tell stories of total real estate and average real estate values by state that are filterable based on the number of bedrooms, bathrooms, and square footage.
 
 ### Web app and bootstrap
 
