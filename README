@@ -1,2 +1,2 @@
 Some files such as the dataset and pickle files are too large to push to github. 
-Running the housingprices_colab.ipynb file will automatically save all csv and pickle files.
+Running the housingprices_colab.ipynb file will automatically save all csv and pickle files. 
